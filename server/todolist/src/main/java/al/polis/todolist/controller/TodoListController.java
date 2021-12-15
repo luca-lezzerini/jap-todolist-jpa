@@ -31,6 +31,12 @@ public class TodoListController {
         return todoListService.add(elem);
     }
 
+    @RequestMapping("/search-for")
+    @ResponseBody
+    public List<TodoElement> searchFor(@RequestBody TodoElement elem) {
+        return todoListService.search(elem);
+    }
+
     @RequestMapping("/remove")
     @ResponseBody
     public List<TodoElement> remove(@RequestBody TodoElement elem) {

@@ -977,3 +977,50 @@ Consider defining a bean of type 'al.polis.todolist.service.TestService' in your
 2021-12-15 11:07:19.909 DEBUG 18144 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
 2021-12-15 11:09:10.453 DEBUG 18144 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
 2021-12-15 11:28:15.005 DEBUG 18144 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:07:28.577 DEBUG 18144 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:08:22.285 DEBUG 18144 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:14:07.583  WARN 5884 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-15 12:14:41.408 DEBUG 5884 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:14:48.612 DEBUG 5884 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-12-15 12:14:48.615 DEBUG 5884 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-12-15 12:14:48.639 DEBUG 5884 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into todo_element (task, id) values (?, ?)
+2021-12-15 12:14:48.641 TRACE 5884 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [get cat]
+2021-12-15 12:14:48.642 TRACE 5884 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [9]
+2021-12-15 12:14:48.654 DEBUG 5884 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:14:52.898 DEBUG 5884 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-12-15 12:14:52.900 DEBUG 5884 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-12-15 12:14:52.907 DEBUG 5884 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into todo_element (task, id) values (?, ?)
+2021-12-15 12:14:52.907 TRACE 5884 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [call mother]
+2021-12-15 12:14:52.908 TRACE 5884 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [10]
+2021-12-15 12:14:52.915 DEBUG 5884 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:14:56.962 DEBUG 5884 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-12-15 12:14:56.963 DEBUG 5884 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-12-15 12:14:56.969 DEBUG 5884 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into todo_element (task, id) values (?, ?)
+2021-12-15 12:14:56.970 TRACE 5884 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [read a book]
+2021-12-15 12:14:56.970 TRACE 5884 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [11]
+2021-12-15 12:14:56.977 DEBUG 5884 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:15:01.610 DEBUG 5884 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-12-15 12:15:01.611 DEBUG 5884 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-12-15 12:15:01.615 DEBUG 5884 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into todo_element (task, id) values (?, ?)
+2021-12-15 12:15:01.616 TRACE 5884 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [open door]
+2021-12-15 12:15:01.616 TRACE 5884 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [12]
+2021-12-15 12:15:01.622 DEBUG 5884 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:15:14.652 DEBUG 5884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-12-15 12:15:14.653 DEBUG 5884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-12-15 12:15:14.660 DEBUG 5884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into todo_element (task, id) values (?, ?)
+2021-12-15 12:15:14.660 TRACE 5884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [study java advanced]
+2021-12-15 12:15:14.660 TRACE 5884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [13]
+2021-12-15 12:15:14.668 DEBUG 5884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 12:15:22.641 DEBUG 5884 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_ where todoelemen0_.task like ? escape ?
+2021-12-15 12:15:22.642 TRACE 5884 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%eat%]
+2021-12-15 12:15:22.642 TRACE 5884 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-12-15 12:15:27.289 DEBUG 5884 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_ where todoelemen0_.task like ? escape ?
+2021-12-15 12:15:27.290 TRACE 5884 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%oo%]
+2021-12-15 12:15:27.291 TRACE 5884 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-12-15 12:15:31.497 DEBUG 5884 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_ where todoelemen0_.task like ? escape ?
+2021-12-15 12:15:31.499 TRACE 5884 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%u%]
+2021-12-15 12:15:31.499 TRACE 5884 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-12-15 12:15:35.761 DEBUG 5884 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_ where todoelemen0_.task like ? escape ?
+2021-12-15 12:15:35.762 TRACE 5884 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%o%]
+2021-12-15 12:15:35.762 TRACE 5884 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-12-15 12:18:53.586  WARN 13204 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

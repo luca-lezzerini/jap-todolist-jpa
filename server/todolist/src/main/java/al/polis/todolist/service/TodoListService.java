@@ -27,4 +27,13 @@ public interface TodoListService {
      * @return all the elements of the todolist
      */
     List<TodoElement> getTodoList();
+    
+    /**
+     * Looks for a list of elements that contains the partial key included in task field
+     * @param e the object which contaons the task partial key
+     * @return the list of elements that contains the partial key 
+     */
+    List<TodoElement> search(TodoElement e);
+    
+    
 }

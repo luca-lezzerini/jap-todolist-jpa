@@ -37,4 +37,11 @@ public class TodoListServiceImpl implements TodoListService {
         return todoElementRepository.findAll();
     }
 
+    @Override
+    public List<TodoElement> search(TodoElement e) {
+        String s = e.getTask();
+        s = "%" + s + "%";
+        return todoElementRepository.findByTaskLike(s);
+    }
+
 }
