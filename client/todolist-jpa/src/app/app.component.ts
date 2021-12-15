@@ -13,15 +13,18 @@ export class AppComponent {
   todo: string = "";
   list: TodoElement[] = [];
 
+  // inject the http client object
   constructor(private http: HttpClient) {
+    // at startup
     // get the already existing pending tasks
     let obs: Observable<TodoElement[]> = this.http
       .get<TodoElement[]>("http://localhost:8080/get-all");
     obs.subscribe(r => {
       this.list = r;
-    })
+    });
   }
 
+  // invokes server to add a new task to the todo list
   addTodo() {
     // create a new element with the task property set to input field value
     let e: TodoElement = new TodoElement();
@@ -44,6 +47,6 @@ export class AppComponent {
       .post<TodoElement[]>("http://localhost:8080/remove", e);
     obs.subscribe(r => {
       this.list = r;
-    })
+    });
    }
 }

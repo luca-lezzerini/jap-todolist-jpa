@@ -15,19 +15,25 @@ public class TodoListServiceImpl implements TodoListService {
 
     @Override
     public List<TodoElement> add(TodoElement e) {
+        // sets ID to null to ensure insertion
         e.setId(null);
+        // save on DB
         todoElementRepository.save(e);
+        // return updated DB content
         return getTodoList();
     }
 
     @Override
     public List<TodoElement> delete(TodoElement e) {
+        // delete element
         todoElementRepository.delete(e);
+        // return updated DB content
         return getTodoList();
     }
 
     @Override
     public List<TodoElement> getTodoList() {
+        // return updated DB content
         return todoElementRepository.findAll();
     }
 

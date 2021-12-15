@@ -975,3 +975,5 @@ Consider defining a bean of type 'al.polis.todolist.service.TestService' in your
 2021-12-15 11:07:19.900 DEBUG 18144 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : delete from todo_element where id=?
 2021-12-15 11:07:19.901 TRACE 18144 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [7]
 2021-12-15 11:07:19.909 DEBUG 18144 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 11:09:10.453 DEBUG 18144 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
+2021-12-15 11:28:15.005 DEBUG 18144 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select todoelemen0_.id as id1_1_, todoelemen0_.task as task2_1_ from todo_element todoelemen0_
